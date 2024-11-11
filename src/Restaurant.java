@@ -3,8 +3,8 @@ import java.util.concurrent.Semaphore;
 public class Restaurant {
     private Semaphore tables;
 
-    public Restaurant(int seats){
-        this.tables = new Semaphore(seats, true);
+    public Restaurant(int tableCount){
+        this.tables = new Semaphore(tableCount, true);
     }
 
     public void tryToSit(int customerId, String entrance) throws InterruptedException {
