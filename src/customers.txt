@@ -1,0 +1,5 @@
+Entrance 1, Customer 0, Arrives 0, Stays 2
+Entrance 1, Customer 1, Arrives 1, Stays 3
+Entrance 2, Customer 2, Arrives 1, Stays 2
+Entrance 3, Customer 3, Arrives 2, Stays 4
+Entrance 2, Customer 4, Arrives 3, Stays 1
