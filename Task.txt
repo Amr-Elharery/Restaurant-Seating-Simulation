@@ -1,0 +1,18 @@
+Task: Restaurant Seating Simulation
+In this simulation, a restaurant has a limited number of tables and three separate entrances through which customers arrive. Each customer needs a table and stays for a specific duration. You’ll manage the seating arrangement so tables are allocated and freed up without conflicts.
+
+Requirements:
+
+    Tables: Set up a restaurant with 5 tables.
+    Entrances: Simulate three entrances (Entrance 1, Entrance 2, Entrance 3) through which customers arrive.
+    Customer Threads: Each customer is represented by a thread that will:
+        Attempt to acquire a table.
+        Stay for a specified duration if seated.
+        Leave the table after their stay, allowing another customer to use it.
+    Concurrency Control: Use a semaphore to control table availability.
+    Customer Arrival and Stay Duration: Use sleep() to simulate arrival times and stay durations.
+    Status Logging: Log each customer’s arrival, whether they are seated or waiting, and the restaurant’s seating status. After all customers have been served, log the total number of customers served and the number from each entrance.
+Implementation Details:
+    Each customer should arrive at a specific time, determined using sleep().
+    When a customer leaves, log the available table count.
+    Randomly determine each customer's entrance and stay duration.
